@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tal.shocker" >
+
+    <!-- parse push permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.example.tal.shocker.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.tal.shocker.permission.C2D_MESSAGE" />
+
+    <!-- end push before app -->
+
+
+    <!-- my app permissions -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- end my app permissions -->
+    <!-- my activites -->
+    <application
+        android:name=".Shocker"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_shocker_24dp"
+        android:label="@string/app_name"
+        android:theme="@style/StartTheme" >
+        <activity
+            android:name=".view.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".view.DispatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DispatchTheme" />
+        <activity
+            android:name=".view.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".view.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".view.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeProfile" />
+        <activity
+            android:name=".view.UserPhotoActivity"
+            android:label="@string/title_activity_user_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemePhotoInfo" />
+        <activity
+            android:name=".view.ViewActivity"
+            android:label="View Photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeView" />
+        <activity
+            android:name=".view.FriendsActivityPhoto"
+            android:label="@string/explore"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeFriendsPhoto" />
+        <activity
+            android:name=".view.ShockActivity"
+            android:label="@string/title_activity_shock"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeShock" />
+        <activity
+            android:name=".view.EditFeedPhotoActivity"
+            android:label="@string/title_activity_edit_feed_photo"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeEditPhoto" />
+        <activity
+            android:name=".view.EditAccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeEditAccount" />
+        <activity
+            android:name=".view.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/ThemeSettings" />
+        <activity
+            android:name=".view.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/ThemeHelp" />
+
+        <!-- end my activites -->
+
+
+        <!-- Facebook Integration -->
+        <activity android:name="com.facebook.FacebookActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider815758155121484"
+            android:exported="true" />
+
+        <!-- End Facebook Integration -->
+
+
+        <!-- replace @drawable/push_icon with your push icon identifier -->
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@drawable/icon" />
+
+        <!-- pushhhh......... -->
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".Push.CustomReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.example.tal.shocker" />
+            </intent-filter>
+        </receiver>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,283 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:layout_margin="@dimen/card_margin">
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:layout_marginTop="10dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Info"
+                android:textColor="@color/primeryMain"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+            <LinearLayout
+                android:id="@+id/lin_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/icon_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_icon_standard_margin_right"
+                    android:src="@drawable/ic_email_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:layout_marginTop="68dp"
+                    android:textSize="21sp"
+                    android:text="@string/email"
+                    android:textColor="@color/text"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/profile_view_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_view_standard_margin_right"
+                android:layout_marginTop="110dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lin_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/icon_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_icon_standard_margin_right"
+                    android:src="@drawable/ic_redeem_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:layout_marginTop="130dp"
+                    android:textSize="21sp"
+                    android:text="@string/birthday"
+                    android:textColor="@color/text"
+                    />
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/profile_view_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_view_standard_margin_right"
+                android:layout_marginTop="170dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/lin_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/icon_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_icon_standard_margin_right"
+                    android:src="@drawable/ic_room_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:layout_marginTop="190dp"
+                    android:textSize="21sp"
+                    android:text="@string/location"
+                    android:textColor="@color/text"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/profile_view_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_view_standard_margin_right"
+                android:layout_marginTop="230dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+            <LinearLayout
+                android:id="@+id/lin_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/icon_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_icon_standard_margin_right"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:layout_marginTop="250dp"
+                    android:textSize="21sp"
+                    android:text="@string/gender"
+                    android:textColor="@color/text"
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="4dp"
+            android:layout_margin="@dimen/card_margin">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:layout_marginTop="15dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="@string/account"
+                android:textColor="@color/primeryMain"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="56dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+            <LinearLayout
+                android:id="@+id/lin_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/SwitchLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:layout_marginTop="80dp"
+                    android:textSize="21sp"
+                    android:text="@string/face_radio"
+                    android:textColor="@color/text"
+                    android:clickable="true"
+                    android:checked="true" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_link2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/SwitchLinkplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="24dp"
+                    android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                    android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                    android:textOff="OFF"
+                    android:textOn="ON"
+                    android:layout_marginTop="135dp"
+                    android:textSize="21sp"
+
+                    android:text="@string/google_plus_radio"
+                    android:textColor="@color/text"
+                    android:clickable="true"
+                    android:checked="false" />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

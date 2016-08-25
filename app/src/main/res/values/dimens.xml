@@ -1,0 +1,99 @@
+<resources>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin_grid">72dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_main">7dp</dimen>
+    <dimen name="activity_vertical_main">5dp</dimen>
+    <dimen name="activity_fab_feeds_left">15dp</dimen>
+    <dimen name="activity_fab_feeds_top">430dp</dimen>
+    <dimen name="activity_detail_vertical_margin">88dp</dimen>
+
+    <dimen name="prog_left">100dp</dimen>
+    <dimen name="prog_Top">16dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_standard_margin_right">16dp</dimen>
+    <dimen name="activity_standard_margin_left">16dp</dimen>
+
+    <dimen name="capture_small_highet">75dp</dimen>
+    <dimen name="capture_small_width">75dp</dimen>
+    <dimen name="capture_big_highet">85dp</dimen>
+    <dimen name="capture_big_width">85dp</dimen>
+
+    <dimen name="fab_highet">25dp</dimen>
+    <dimen name="fab_width">250dp</dimen>
+    <dimen name="title_bar_padding">15dp</dimen>
+    <dimen name="list_item_padding">10dp</dimen>
+    <dimen name="double_padding">32dp</dimen>
+    <dimen name="actionbar_dimen">56dp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
+
+    <dimen name="progressBar_dimen">100dp</dimen>
+
+    <!-- activity view -->
+    <dimen name="activity_view_standard_margin_right">30dp</dimen>
+    <dimen name="activity_view_standard_margin_left">66dp</dimen>
+    <dimen name="activity_view_standard_margin_Top">10dp</dimen>
+    <dimen name="activity_view_profile_margin_right">10dp</dimen>
+    <dimen name="activity_view_profile_margin_left">5dp</dimen>
+    <dimen name="activity_view_profile_margin_Top">10dp</dimen>
+
+    <!-- list_feeds -->
+    <dimen name="list_feeds_standard_margin_right">16dp</dimen>
+    <dimen name="list_feeds_standard_margin_left">16dp</dimen>
+    <!-- list_friends_send -->
+    <dimen name="list_friends_send_standard_margin_right">126dp</dimen>
+    <dimen name="list_friends_send_standard_margin_left">80dp</dimen>
+    <dimen name="list_friends_send_standard_margin_Top">30dp</dimen>
+    <dimen name="list_friends_send_standard_margin_Bottom">15dp</dimen>
+    <dimen name="list_feeds_standard_margin_right_title">48dp</dimen>
+    <dimen name="list_standard_margin_left_menu">300dp</dimen>
+    <dimen name="list_standard_margin_right_menu">0dp</dimen>
+
+    <!-- profile-->
+    <dimen name="profile_text_standard_margin_right">16dp</dimen>
+    <dimen name="profile_text_standard_margin_left">10dp</dimen>
+    <dimen name="profile_view_standard_margin_right">16dp</dimen>
+    <dimen name="profile_view_standard_margin_left">66dp</dimen>
+    <dimen name="profile_icon_standard_margin_left">10dp</dimen>
+    <dimen name="profile_icon_standard_margin_right">5dp</dimen>
+    <dimen name="fab_top">220dp</dimen>
+    <dimen name="fab_right">16dp</dimen>
+    <dimen name="fab_end">20dp</dimen>
+    <dimen name="card_margin">16dp</dimen>
+    <!--nav prodile-->
+    <dimen name="baseline_start">16dp</dimen>
+    <dimen name="baseline_content">72dp</dimen>
+    <dimen name="baseline_end">16dp</dimen>
+    <dimen name="big_avatar_size">70dp</dimen>
+
+    <dimen name="navdrawer_image_height">192dp</dimen>
+    <dimen name="navdrawer_user_picture_size">55dp</dimen>
+
+    <dimen name="margin_user_layout">25dp</dimen>
+    <dimen name="margin_user_name">3dp</dimen>
+    <dimen name="margin_user_email">20dp</dimen>
+
+    <dimen name="grid_spacing">4dp</dimen>
+
+    <integer name="anim_duration_very_long">2000</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium">300</integer>
+
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_2dp">2dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_14sp">14sp</dimen>
+    <dimen name="dimen_16sp">16sp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_32dp">32dp</dimen>
+    <dimen name="dimen_48dp">48dp</dimen>
+    <dimen name="dimen_56dp">56dp</dimen>
+
+</resources>

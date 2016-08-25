@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/invite_cardView"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingStart="@dimen/list_friends_send_standard_margin_left"
+        android:paddingEnd="@dimen/list_friends_send_standard_margin_right"
+        android:paddingTop="@dimen/list_friends_send_standard_margin_Top"
+        android:paddingBottom="@dimen/list_friends_send_standard_margin_Bottom"
+        android:textColor="@color/dark_gray"
+        android:text="user"
+        android:textSize="18sp"
+        android:background="@drawable/button_rect_list"
+
+        />
+
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/userImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:clickable="false"
+        />
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/circularButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/cpb_white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        app:cpb_cornerRadius="16dp"
+        app:cpb_iconComplete="@drawable/ic_action_accept"
+        app:cpb_iconError="@drawable/ic_action_cancel"
+        app:cpb_textIdle="Add" />
+            </RelativeLayout>
+
+</LinearLayout>
+</RelativeLayout>
+

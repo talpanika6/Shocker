@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:id="@+id/share_photo"
+        android:title="@string/share_photo"
+        android:icon="@drawable/ic_share_black_18dp"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+    <item android:id="@+id/edit_photo"
+        android:title="@string/edit_photo"
+        android:icon="@drawable/ic_create_black_18dp"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+    <item android:id="@+id/delete_photo"
+        android:title="@string/delete_photo"
+        android:icon="@drawable/ic_delete_black_18dp"
+        app:showAsAction="always"
+        android:visible="true"/>
+
+</menu>

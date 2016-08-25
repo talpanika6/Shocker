@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="login_btn">Login</string>
+    <string name="prompt_user_name">User Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_again">Re-Password</string>
+    <string name="error_intro">"Please "</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="error_blank_username">enter a user name</string>
+    <string name="error_blank_password">enter a password</string>
+    <string name="error_mismatched_passwords">enter the same password twice</string>
+    <string name="error_join">", and "</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Logging you in&#8230;</string>
+    <string name="progress_signup">Signing you up&#8230;</string>
+    <string name="progress_logout">Logging you out&#8230;</string>
+    <string name="forgot">forgot</string>
+    <string name="logout">Log Out</string>
+
+</resources>

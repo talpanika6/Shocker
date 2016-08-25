@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rLayout"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/EditLayout"
+            android:elevation="8dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            android:layout_width="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/photo_big"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    />
+                <com.pnikosis.materialishprogress.ProgressWheel
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:layout_gravity="center"
+                    app:matProg_barColor="@color/primery"
+                    app:matProg_progressIndeterminate="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="360dp"
+                    android:background="@color/light_gray"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/photo_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#616161"
+                    android:layout_marginTop="365dp">
+                    <EditText
+                        android:id="@+id/title_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#616161"
+                        android:hint="@string/photo_comment"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="@dimen/activity_view_standard_margin_right"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:textSize="18sp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:id="@+id/done_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/rLayout"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_done_white_24dp"
+        android:elevation="8dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitCenter"/>
+</android.support.design.widget.CoordinatorLayout>

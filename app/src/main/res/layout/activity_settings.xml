@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.tal.shocker.view.HelpActivity">
+    <ScrollView
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/StartTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/settingsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/StartTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+            <TextView
+                android:id="@+id/app"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/app"
+                android:textColor="@color/primeryMain_settings"
+
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/SwitchSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textSize="18sp"
+                android:text="@string/sound"
+                android:textColor="@color/text"
+                android:clickable="true"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+
+
+            <TextView
+                android:id="@+id/not"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/notification"
+                android:textColor="@color/primeryMain_settings"
+
+                />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/SwitchPush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/profile_icon_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:textSize="18sp"
+                android:text="@string/push"
+                android:textColor="@color/text"
+                android:clickable="true"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="@dimen/profile_text_standard_margin_left"
+                android:layout_marginEnd="@dimen/profile_text_standard_margin_right"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="@string/about"
+                android:textColor="@color/primeryMain_settings"
+
+                />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/app_ver"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/button_rect_list"
+                android:paddingStart="@dimen/profile_text_standard_margin_left"
+                android:paddingEnd="@dimen/profile_text_standard_margin_right"
+                android:textSize="16sp"
+                android:text="@string/app_ver"
+
+
+                />
+            <TextView
+                android:id="@+id/ver"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:paddingTop="5dp"
+                android:layout_height="25dp"
+                android:paddingStart="@dimen/profile_text_standard_margin_left"
+                android:paddingEnd="@dimen/profile_text_standard_margin_right"
+                android:textSize="14sp"
+
+                android:text="@string/ver"
+
+
+                />
+
+        </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+            <TextView
+                android:id="@+id/legal_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:paddingStart="@dimen/profile_text_standard_margin_left"
+                android:paddingEnd="@dimen/profile_text_standard_margin_right"
+                android:textSize="18sp"
+                android:text="@string/terms"
+                android:background="@drawable/button_rect_list"
+                android:paddingTop="20dp"
+
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_height="1dp"
+                android:background="@color/cpb_grey"
+                />
+
+            <RelativeLayout
+                android:id="@+id/lin_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/logout_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingStart="55dp"
+                    android:background="@drawable/button_rect_list"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="@dimen/profile_text_standard_margin_right"
+                    android:textSize="18sp"
+                    android:text="@string/logout"
+                    android:textColor="@color/text"
+                    />
+                <ImageView
+                    android:id="@+id/icon_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_exit_to_app_black_24dp"/>
+
+
+
+
+            </RelativeLayout>
+
+     </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

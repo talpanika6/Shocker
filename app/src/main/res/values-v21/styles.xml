@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="StartTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- enable window content transitions -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DispatchTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- enable window content transitions -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#263238</item>
+        <item name="android:navigationBarColor">#263238</item>
+    </style>
+
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#ffd740</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ThemeProfile" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#FF4081</item>
+    </style>
+
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">false</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="ThemeSettings" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#2196F3</item>
+        <item name="android:statusBarColor">#1976D2</item>
+    </style>
+
+    <style name="ThemeHelp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#F44336</item>
+        <item name="colorPrimaryDark">#D32F2F</item>
+        <item name="colorAccent">#F44336</item>
+        <item name="android:statusBarColor">#D32F2F</item>
+    </style>
+
+    <style name="ThemePhotoInfo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#00BCD4</item>
+        <item name="android:statusBarColor">#009688</item>
+        <item name="android:windowBackground">@color/theme_window_background</item>
+    </style>
+
+    <style name="ThemeShock" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#00BCD4</item>
+        <item name="android:statusBarColor">#009688</item>
+        <item name="android:windowBackground">@color/theme_window_background</item>
+    </style>
+
+    <style name="ThemeEditPhoto" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#00BCD4</item>
+        <item name="android:statusBarColor">#009688</item>
+        <item name="android:windowBackground">@color/theme_window_background</item>
+    </style>
+
+    <style name="ThemeEditAccount" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#00BCD4</item>
+        <item name="android:statusBarColor">#009688</item>
+        <item name="android:windowBackground">@color/theme_window_background</item>
+    </style>
+
+
+    <style name="ThemeFriendsPhoto" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#00BFA5</item>
+        <item name="colorAccent">@color/theme_window_background</item>
+        <item name="android:statusBarColor">#009688</item>
+    </style>
+
+
+    <style name="ThemeView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorAccent">#00BFA5</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#009688</item>
+    </style>
+    <style name="ThemeViewShock" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00BFA5</item>
+        <item name="colorPrimaryDark">#009688</item>
+        <item name="colorAccent">#00BFA5</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#009688</item>
+    </style>
+
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:displayOptions">homeAsUp</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ExpandedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">26.5sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22.5sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Widget.MyApp.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:overlapAnchor">true</item>
+    </style>
+
+    <style name="Button" parent="android:Widget.Material.Button.Borderless">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/dimen_48dp</item>
+        <item name="android:paddingRight">@dimen/dimen_48dp</item>
+        <item name="android:paddingTop">@dimen/dimen_8dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:background">@drawable/stroke_button</item>
+        <item name="android:minHeight">@dimen/dimen_0dp</item>
+        <item name="android:minWidth">@dimen/dimen_0dp</item>
+
+    </style>
+
+    <style name="StartTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="StartTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
